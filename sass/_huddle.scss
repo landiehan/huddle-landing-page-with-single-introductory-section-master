@@ -1,0 +1,113 @@
+/* this file is the huddle-landing-page container */
+.huddle {
+  width: 375px;
+  padding: 3rem 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  @media screen and (min-width: $bp-large) {
+    width: 1440px;
+    padding: 5rem 6.5rem;
+    background-image: url("../images/bg-desktop.svg");
+  } 
+
+  &__logo {
+    display: inline-block;
+    height: 3rem;
+    img {
+      height: 100%;
+    }
+    @media screen and (min-width: $bp-large) {
+      height: 5.5rem;
+    }
+  }
+
+  &__hero {
+    width: 100%;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+    @media screen and (min-width: $bp-large) {
+      margin-top: 5rem;
+      margin-left: 6rem;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    font-family: $font-title;
+    font-size: 2.2rem;
+    text-align: center;
+    color: white;
+    @media screen and (min-width: $bp-large) {
+      font-size: 4rem;
+      text-align: start;
+    }
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: .012rem;
+    margin-top: 1.5rem;
+    opacity: .85;
+    @media screen and (min-width: $bp-large) {
+      font-size: 1.8rem;
+      letter-spacing: .03rem;
+      text-align: start;
+    }
+  }
+
+  &__register {
+    width: 70%;
+    height: 4rem;
+    border-radius: 2rem;
+    border: none;
+    color: $violet;
+    font-family: inherit;
+    box-shadow: 0 .8rem 1.6rem -.8rem rgba(black, .6);
+    margin-top: 2rem;
+
+    cursor: pointer;
+    &:hover {
+      background-color: $soft-magenta;
+      color: white;
+    }
+
+    @media screen and (min-width: $bp-large) {
+      width: 20rem;
+      height: 5rem;
+      border-radius: 2.5rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__footer {
+    margin-top: 6rem;
+    @media screen and (min-width: $bp-large) {
+      margin-top: unset;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__social-link-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > * + * {
+      margin-left: 1rem;
+      @media screen and (min-width: $bp-large) {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
