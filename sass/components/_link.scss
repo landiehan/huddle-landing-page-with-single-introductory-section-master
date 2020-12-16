@@ -1,0 +1,29 @@
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+
+  @media screen and (min-width: $bp-large) {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  border: 1px solid white;
+  fill: white;
+  &:hover {
+    border-color: $soft-magenta;
+    fill: $soft-magenta;
+  }
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  @media screen and (min-width: $bp-large) {
+    width: 2rem;
+    height: 2rem;  
+  }
+}
